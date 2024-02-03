@@ -114,7 +114,7 @@ def apply_args(program : ArgumentParser) -> None:
 	facefusion.globals.output_path = normalize_output_path(facefusion.globals.source_paths, facefusion.globals.target_path, args.output_path)
 	# misc
 	facefusion.globals.skip_download = args.skip_download
-	facefusion.globals.headless = args.headless
+	facefusion.globals.headless = True
 	facefusion.globals.log_level = args.log_level
 	# execution
 	facefusion.globals.execution_providers = decode_execution_providers(args.execution_providers)
